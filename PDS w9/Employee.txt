@@ -1,0 +1,4 @@
+first_name surname gender rank type basic_salary hours_worked
+John Smiths M manager monthly 45000.00
+Sunil Bates M senor hourly 700.00 45
+Eva Leung F officer monthly 30500.00
