@@ -17,7 +17,7 @@ Data Science Lifecycle
 \centering
 \begin{minipage}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{flow_diagram_data_science_lifecycle.png}
+    \includegraphics[width=\textwidth]{flow_diagram.png}
 \end{minipage}
 \hfill
 \end{figure}
@@ -73,6 +73,9 @@ To explore trends, correlations, and outliers:
 \end{minipage}
 \hfill
 \end{figure}
+\begin{center}
+Random Data taken for example purpose
+\end{center}
 
 - **Box Plots**: Variability of vehicle counts.
 - **Line Graphs**: Temporal trends in traffic volume.
@@ -189,7 +192,7 @@ Deliverables include:
   - **Traffic Trends**: Monitor changes in congestion and vehicle distribution over time.
 - Update and retrain models periodically to adapt to evolving traffic conditions.
 
-By following this structured approach, the Intelligent Traffic Management System can deliver actionable insights to address traffic congestion effectively and enhance transportation systems globally.
+By following this structured approach, the System can deliver actionable insights to address traffic congestion effectively and enhance transportation systems globally.
 
 \newpage
 
