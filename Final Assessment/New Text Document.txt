@@ -1,0 +1,28 @@
+Author : Shyam Vijay Jagani                                                                                                  Stu No : 2611208
+Different Phases of the Data Science Lifecycle
+1. Acquire Data
+Data Sourcing: Identify and access relevant data from various sources such as SQL databases, APIs, NoSQL storage, and traditional databases.
+Data Extraction: Retrieve the necessary data in a suitable format to support subsequent analysis.
+2. Prepare Data
+Statistical Summary: Calculate summary statistics (e.g., mean, median, standard deviation, and quartiles) to understand the data's distribution.
+Visualization: Use visual tools such as histograms, scatter plots, heat maps, box plots, and line graphs to explore trends, correlations, and outliers.
+Data Cleaning:
+Handle data quality issues like missing values, duplicates, inconsistencies, and outliers.
+Apply domain knowledge to address invalid data and noise.
+Data Transformation:
+Normalize and scale data.
+Perform feature selection, dimensionality reduction, and other manipulations to prepare data for analysis.
+3. Analyze Data
+Exploratory Data Analysis (EDA): Gain insights through visualizations and statistical summaries to inform further modeling steps.
+Model Building:
+Select appropriate machine learning or analytical techniques (e.g., regression, classification, clustering, association analysis, graph analytics).
+Train and validate the model.
+Model Evaluation: Assess the model's quality and reliability using relevant metrics to determine if further refinement is needed.
+4. Report Insights
+Data Visualization: Present findings using visual tools for clarity and impact.
+Storytelling: Clearly communicate insights in a structured and compelling way, tailored to the audience.
+Report Generation: Produce formal reports or presentations that summarize key results and recommendations.
+5. Act on Insights
+Decision Making: Use insights to guide business decisions or actions.
+Model Deployment: Implement the model in a production environment, such as a web application, API, or batch processing system.
+Monitoring and Feedback: Continuously evaluate model performance and refine the approach when necessary.
