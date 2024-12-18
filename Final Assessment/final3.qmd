@@ -1,5 +1,5 @@
 ---
-title: "Intelligent Traffic Management System: Data Science Lifecycle"
+title: "Intelligent Traffic Management System"
 author: "Apex Research"
 geometry: "left=1cm,right=1cm,top=1cm,bottom=1cm"
 date: "2024-12-18"
@@ -10,6 +10,9 @@ format:
       csl: harvard.csl
 ---
 
+\begin{center}
+Data Science Lifecycle
+\end{center}
 \begin{figure}[H]
 \centering
 \begin{minipage}[b]{0.45\textwidth}
@@ -26,18 +29,22 @@ format:
 To detect and count vehicles, data will be sourced from various sources, including:
 
 - **Camera Feeds**: High-definition cameras installed at intersections, flyovers, roundabouts, and major road networks.
-- **IoT Sensors**: Devices such as inductive loop detectors, radar sensors, and LIDAR systems placed along roads to measure vehicle flow and density [@fhwa_emerging_technologies; @goodvision_traffic_data].
+- **IoT Sensors**: Devices such as inductive loop detectors, radar sensors, and LIDAR systems placed along roads to measure vehicle flow and density.
 - **GPS Data**: Real-time location data from navigation apps and vehicle tracking systems to analyze traffic patterns.
 - **Open Datasets**: Publicly available traffic datasets from government agencies or research organizations.
 - **APIs**: Access traffic-related data from APIs such as Google Maps Traffic API or OpenStreetMap.
 - **Social Media and Crowdsourcing**: Platforms like Waze that provide user-reported traffic conditions and incidents.
+
+[@fhwa_emerging_technologies; @goodvision_traffic_data]
 
 ## 1.2 Data Extraction
 
 - **Cameras**: Extract image and video streams using APIs or direct feed integration.
 - **Sensors**: Retrieve data using IoT protocols such as MQTT or HTTP.
 - **APIs**: Pull data using Python libraries like `requests` or SDKs provided by vendors.
-- **Databases**: Extract historical traffic data from SQL/NoSQL databases using queries or data pipelines [@snowflake_traffic_management].
+- **Databases**: Extract historical traffic data from SQL/NoSQL databases using queries or data pipelines.
+
+[@snowflake_traffic_management]
 
 The data will be retrieved in formats such as CSV, JSON, video files, and image datasets, and stored in a centralized data repository for further analysis.
 
@@ -56,7 +63,7 @@ To explore trends, correlations, and outliers:
 
 - **Histograms**: Vehicle distribution across time intervals.
 - **Scatter Plots**: Relationship between vehicle speed and density.
-- **Heat Maps**: Congestion patterns at intersections.
+- **Heat Maps**: Congestion patterns in different parts of road networks .
 
 \begin{figure}[H]
 \centering
@@ -100,13 +107,15 @@ Potential techniques for detecting and counting vehicles:
 
 1. **Computer Vision**
    - **Object Detection Models**: Models like YOLO (You Only Look Once) and SSD (Single Shot Multibox Detector) for real-time vehicle detection.
-   - **Semantic Segmentation**: Models like U-Net for detecting vehicles in dense traffic scenarios [@researchgate_intelligent_traffic].
+   - **Semantic Segmentation**: Models like U-Net for detecting vehicles in dense traffic scenarios.
 2. **Machine Learning**
    - **Clustering**: K-means to classify congestion zones.
    - **Regression**: Predict traffic volume based on historical trends.
 3. **Deep Learning**
    - Use CNNs (Convolutional Neural Networks) for image recognition and classification.
    - Train custom models on annotated datasets for vehicle detection and counting.
+
+   [@researchgate_intelligent_traffic]
 
 ## 3.3 Model Evaluation
 
@@ -129,7 +138,9 @@ Generate clear and impactful visualizations:
 - **Congestion Heatmaps**: Indicating areas with frequent traffic jams.
 - **Traffic Volume Trends**: Hourly or daily vehicle counts displayed via line graphs.
 - **Vehicle Classification Charts**: Pie charts showing percentages of different vehicle types.
-- **Intersection Analysis**: Visual comparisons of traffic at different intersections [@intellias_intelligent_traffic; @dc_velocity_itms].
+- **Intersection Analysis**: Visual comparisons of traffic at different intersections.
+
+[@intellias_intelligent_traffic; @dc_velocity_itms]
 
 ## 4.2 Storytelling
 
@@ -167,7 +178,9 @@ Deliverables include:
 - **Implementation**: Deploy vehicle detection models into production environments such as:
   - **Web Applications**: Traffic monitoring platforms with live visualizations.
   - **APIs**: Provide traffic data to external systems or mobile apps.
-- **Edge Computing**: Run models on devices close to the source, such as traffic cameras [@intel_intelligent_traffic; @tomtom_data_driving].
+- **Edge Computing**: Run models on devices close to the source, such as traffic cameras.
+
+[@intel_intelligent_traffic; @tomtom_data_driving]
 
 ## 5.3 Monitoring and Feedback
 
