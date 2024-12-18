@@ -178,4 +178,6 @@ Deliverables include:
 
 By following this structured approach, the Intelligent Traffic Management System can deliver actionable insights to address traffic congestion effectively and enhance transportation systems globally.
 
+\newpage
+
 # References
