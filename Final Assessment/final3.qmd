@@ -1,26 +1,43 @@
 ---
 title: "Intelligent Traffic Management System"
 author: "Apex Research"
-geometry: "left=1cm,right=1cm,top=1cm,bottom=1cm"
+geometry: "left=1cm,right=1cm,top=1cm,bottom=0.5cm"
 date: "2024-12-18"
 format: 
     pdf: 
       toc: true
+      number-sections: true
+      toc-depth: 3    # Set depth of TOC (default is 2)
       bibliography: "references.bib" 
       csl: harvard.csl
 ---
+\newpage
+
+\begin{center}
+\textbf{Outline}
+\end{center}
+
+This report outlines a comprehensive framework for detecting and counting vehicles to analyze traffic patterns and address congestion challenges effectively. Data will be sourced from diverse channels, including camera feeds, IoT sensors, GPS data, open datasets, and traffic-related APIs. After extraction, the data will undergo extensive cleaning, transformation, and statistical summarization to prepare it for analysis. Exploratory Data Analysis (EDA) will identify traffic trends, congestion hotspots, and vehicle category distributions.
+
+For vehicle detection and counting, advanced computer vision models, such as YOLO and U-Net, will be explored alongside machine learning techniques like K-means clustering and regression analysis. Deep learning methods leveraging Convolutional Neural Networks (CNNs) will further enhance detection accuracy. Model performance will be evaluated using metrics such as precision, recall, F1-score, and root mean squared error (RMSE).
+
+The report also provides actionable insights through visualizations, including congestion heatmaps, traffic volume trends, and vehicle classification charts. Recommendations include implementing intelligent traffic management systems, optimizing infrastructure, and deploying dynamic traffic solutions. Finally, strategies for deploying models in production environments and continuously monitoring performance are discussed. This approach aims to enhance traffic monitoring and contribute to smarter transportation systems globally.
 
 \begin{center}
 Data Science Lifecycle
 \end{center}
 \begin{figure}[H]
 \centering
-\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{1\textwidth}
     \centering
     \includegraphics[width=\textwidth]{flow_diagram.png}
 \end{minipage}
 \hfill
 \end{figure}
+
+---
+
+\newpage
 
 # 1. Acquire Data
 
