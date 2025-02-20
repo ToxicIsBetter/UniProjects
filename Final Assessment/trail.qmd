@@ -1,0 +1,126 @@
+---
+title: "Intelligent Traffic Management System: Data Science Lifecycle"
+author: "Apex Research"
+geometry: "left=1cm,right=1cm,top=1cm,bottom=1cm"
+date: "2024-12-18"
+format: 
+    pdf: 
+      toc: true
+      bibliography: "references.bib" 
+      csl: harvard.csl
+---
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{flow_diagram_data_science_lifecycle.png}
+\end{minipage}
+\hfill
+\end{figure}
+
+# 1. Acquire Data
+
+## 1.1 Data Sourcing
+
+To detect and count vehicles, data will be sourced from various sources, including:
+
+- **Camera Feeds**: High-definition cameras installed at intersections, flyovers, roundabouts, and major road networks.
+- **IoT Sensors**: Devices such as inductive loop detectors, radar sensors, and LIDAR systems placed along roads to measure vehicle flow and density.
+- **GPS Data**: Real-time location data from navigation apps and vehicle tracking systems to analyze traffic patterns.
+- **Open Datasets**: Publicly available traffic datasets from government agencies or research organizations.
+- **APIs**: Access traffic-related data from APIs such as Google Maps Traffic API or OpenStreetMap.
+- **Social Media and Crowdsourcing**: Platforms like Waze that provide user-reported traffic conditions and incidents.
+
+These data sources will be integrated to create a holistic view of traffic patterns and assist in decision-making processes. The various data types will be critical in the design and effectiveness of the intelligent traffic management system. [@fhwa_emerging_technologies; @goodvision_traffic_data]
+
+## 1.2 Data Extraction
+
+The data will be extracted using different methods:
+
+- **Cameras**: Extract image and video streams using APIs or direct feed integration.
+- **Sensors**: Retrieve data using IoT protocols such as MQTT or HTTP.
+- **APIs**: Pull data using Python libraries like `requests` or SDKs provided by vendors.
+- **Databases**: Extract historical traffic data from SQL/NoSQL databases using queries or data pipelines.
+
+This data extraction will ensure that we gather all the necessary traffic data for analysis. The extraction will also involve the usage of data pipelines to automate the process where possible. [@snowflake_traffic_management]
+
+---
+
+# 2. Prepare Data
+
+## 2.1 Statistical Summary
+
+- **Summary Statistics**: Calculate key metrics for traffic data such as vehicle counts, average speed, and congestion duration.
+  - *Example*: Mean vehicle counts per hour, median congestion levels at peak hours.
+
+Statistical summaries will help in understanding the basic trends and patterns in traffic data, which is vital for further analysis and modeling. These insights will guide the next steps in data preparation. [@goodvision_traffic_data]
+
+## 2.2 Visualization
+
+To explore trends, correlations, and outliers:
+
+- **Histograms**: Vehicle distribution across time intervals.
+- **Scatter Plots**: Relationship between vehicle speed and density.
+- **Heat Maps**: Congestion patterns at intersections.
+
+Visualizing traffic data helps identify hidden trends and patterns that are not immediately apparent in raw numbers. Visualization tools will be critical in making the data more comprehensible and actionable. [@researchgate_intelligent_traffic]
+
+## 2.3 Data Cleaning
+
+- **Missing Data**: Use imputation techniques (e.g., mean or median imputation) for missing values in sensor data.
+- **Duplicates**: Remove duplicate records from GPS or API datasets.
+- **Outliers**: Identify and handle anomalies like unusually high vehicle counts using domain knowledge.
+- **Inconsistent Data**: Standardize formats for time stamps, locations, and vehicle types.
+
+Data cleaning is a crucial step to ensure that the analysis is based on high-quality and reliable data. It prepares the data for more advanced analysis and modeling. [@goodvision_traffic_data]
+
+## 2.4 Data Transformation
+
+- **Normalization and Scaling**: Apply min-max scaling for features like speed, vehicle counts, and density.
+- **Feature Selection**: Select key features such as timestamp, location, vehicle type, and speed.
+- **Dimensionality Reduction**: Use PCA (Principal Component Analysis) for large datasets, e.g., video frame data.
+- **Format Conversion**: Convert video data into frames and annotate for training purposes.
+
+Data transformation prepares the data for effective model building by ensuring it is in a format that the algorithms can handle. [@snowflake_traffic_management]
+
+---
+
+# 3. Analyze Data
+
+## 3.1 Exploratory Data Analysis (EDA)
+
+EDA is used to understand patterns in traffic and vehicle distribution, helping to visualize peak traffic hours and identify congestion hotspots.
+
+- Visualize trends and identify patterns in vehicle categories (cars, buses, trucks).
+- Examine distribution patterns of vehicle counts over different times of the day.
+
+This exploration will help in framing the problem and setting up hypotheses for model development. [@researchgate_intelligent_traffic]
+
+## 3.2 Model Building
+
+Several potential techniques for detecting and counting vehicles will be used:
+
+1. **Computer Vision**
+   - **Object Detection Models**: Models like YOLO (You Only Look Once) and SSD (Single Shot Multibox Detector) for real-time vehicle detection.
+   - **Semantic Segmentation**: Models like U-Net for detecting vehicles in dense traffic scenarios.
+2. **Machine Learning**
+   - **Clustering**: K-means to classify congestion zones.
+   - **Regression**: Predict traffic volume based on historical trends.
+3. **Deep Learning**
+   - Use CNNs (Convolutional Neural Networks) for image recognition and classification.
+   - Train custom models on annotated datasets for vehicle detection and counting.
+
+The model-building process will use both traditional machine learning methods and advanced deep learning techniques to ensure accuracy and reliability in vehicle detection. [@intel_intelligent_traffic]
+
+## 3.3 Model Evaluation
+
+Evaluating models using metrics such as accuracy, precision, recall, F1-score, and RMSE will provide a comprehensive assessment of model performance. These metrics will guide further refinements and adjustments.
+
+- Evaluate the performance of object detection and classification models using the mentioned metrics.
+
+The evaluation will provide feedback on the models and help in choosing the best-performing ones for deployment. [@tomtom_data_driving]
+
+---
+
+# References
