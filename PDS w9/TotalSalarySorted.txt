@@ -1,0 +1,4 @@
+first_name surname gender Total_Salary
+John Smiths M 51750.0
+Eva Leung F 36600.0
+Sunil Bates M 36225.0
